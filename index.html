@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nps calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="main_div container">
+<div class="heading">
+    <h3>NPS CALCULATOR</h3>
+    <h5>Calculate Your Net Promoter Score in a Snap</h5>
+    <p>Want to take a better look at your NPS? Try our fast, free calculator.</p>
+</div>
+<!-- heading close -->
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xs-12 form_div">
+        <form  name="CALC-form" class="CALC-form" id="CALC-form">
+            <div id="CALC-form-input">
+              <div class="row">
+                <div class="col-md-12 CALC-form-input-inner">
+                  <div class="form-group">
+                    <label class="form-label nu1">Detractors:</label>
+                    <input type="number" class="form-control" id="detractors" name="detractors" placeholder="Detractors" min="0" oninput="updateNPS()" required="required" autocomplete="off"/>
+                    <p>Total of those who rated you a 0, 1, 2, 3, 4, 5, or 6.</p>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label nu2 ">Passives:</label>
+                    <input type="number" class="form-control" id="passives" name="passives" oninput="updateNPS()" min="0" placeholder="passives" required="required" autocomplete="off"/>
+                    <p>Total of those who rated you a 7 or an 8.</p>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label nu3 ">Promoters:</label>
+                    <input type="number" class="form-control" id="promoters" name="promoters" placeholder="promoters"  min="0" oninput="updateNPS()" required="required" autocomplete="off" />
+                    <p>Total of those who rated you a 9 or a 10.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        
+          <h6>Your NPS</h6>
+          <div id="result_div">
+        
+          </div>
+          </div>
+<!-- form area closed -->
+      
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xs-12 div_main_2 ">
+<div class="">
+    <div class="number nu1"><span>1</span></div>
+     <div class="main_text">
+ <h3>Determine your Detractors.</h3>
+ <p>Your detractors are those who are most likely to speak badly about your company to others and have negative feelings toward your business. This group rates you between a 0 and a 6.</p>
+</div>
+</div>
+<div class="text_02">
+    <div class="number nu2 "><span>2</span></div>
+     <div class="main_text">
+ <h3>Determine your Passives.</h3>
+ <p>Your passives are customers who are the most at risk for being swayed easily. They can become a detractor or a promoter easily. They rate you between a 7 and an 8.</p>
+</div>
+</div>
+<div class="text_03">
+    <div class="number nu3 "><span>3</span></div>
+     <div class="main_text ">
+ <h3>Determine your Promoters.</h3>
+ <p>Your promoters are those who talk highly of you to other people. They rate you between a 9 and a 10.</p>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- middle are aclose  -->
+  <!-- media screen 986px -->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <!-- scripts -->
+    <script src="testing.js"></script>
+    
+   <!-- <script src="script.js"></script>  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
